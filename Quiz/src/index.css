@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#080d1a] text-slate-100 overflow-x-hidden transition-colors duration-300;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+/* Light Theme Styling Adaptations */
+body.light-theme:not(.admin-mode) {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+body.light-theme:not(.admin-mode) section {
+  background-color: #f8fafc !important;
+}
+
+body.light-theme:not(.admin-mode) #hero {
+  /* Hero maintains the campus photo background */
+  background-color: transparent !important;
+}
+
+body.light-theme:not(.admin-mode) .p-6.rounded-2xl:not(.admin-card):not(.developer-card),
+body.light-theme:not(.admin-mode) .p-5.rounded-2xl:not(.admin-card):not(.developer-card),
+body.light-theme:not(.admin-mode) .p-4.rounded-xl:not(.admin-card):not(.developer-card),
+body.light-theme:not(.admin-mode) .glass-card {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Disqualification & Penalty rules in light theme */
+body.light-theme:not(.admin-mode) .border-rose-500\/30,
+body.light-theme:not(.admin-mode) .border-rose-200 {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-color: #fecdd3 !important;
+  box-shadow: 0 4px 15px -2px rgba(244, 63, 94, 0.08) !important;
+}
+
+body.light-theme:not(.admin-mode) .bg-rose-500\/10,
+body.light-theme:not(.admin-mode) .bg-rose-500\/20,
+body.light-theme:not(.admin-mode) .bg-rose-100 {
+  background-color: #ffe4e6 !important;
+  border-color: #fecdd3 !important;
+  color: #be123c !important;
+}
+
+body.light-theme:not(.admin-mode) .text-rose-400,
+body.light-theme:not(.admin-mode) .text-rose-400\/90,
+body.light-theme:not(.admin-mode) .text-rose-600,
+body.light-theme:not(.admin-mode) .text-rose-700 {
+  color: #be123c !important;
+}
+
+/* Tie-Breaker rules in light theme */
+body.light-theme:not(.admin-mode) .border-amber-500\/30,
+body.light-theme:not(.admin-mode) .border-amber-200 {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-color: #fde68a !important;
+  box-shadow: 0 4px 15px -2px rgba(245, 158, 11, 0.08) !important;
+}
+
+body.light-theme:not(.admin-mode) .bg-amber-500\/20,
+body.light-theme:not(.admin-mode) .bg-amber-500\/10,
+body.light-theme:not(.admin-mode) .bg-amber-50 {
+  background-color: #fef3c7 !important;
+  border-color: #fde68a !important;
+  color: #92400e !important;
+}
+
+body.light-theme:not(.admin-mode) .text-amber-300,
+body.light-theme:not(.admin-mode) .text-amber-400,
+body.light-theme:not(.admin-mode) .text-amber-600,
+body.light-theme:not(.admin-mode) .text-amber-700 {
+  color: #92400e !important;
+}
+
+/* Fix all text classes in light theme to be dark and easily readable */
+body.light-theme:not(.admin-mode) .text-slate-100,
+body.light-theme:not(.admin-mode) .text-slate-200,
+body.light-theme:not(.admin-mode) .text-slate-300 {
+  color: #1e293b !important;
+}
+
+body.light-theme:not(.admin-mode) .text-slate-400 {
+  color: #475569 !important;
+}
+
+body.light-theme:not(.admin-mode) .text-white:not(.admin-text) {
+  color: #0f172a !important;
+}
+
+body.light-theme:not(.admin-mode) label {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+body.light-theme:not(.admin-mode) #hero .text-white {
+  color: #ffffff !important;
+}
+
+body.light-theme:not(.admin-mode) input:not(.admin-input),
+body.light-theme:not(.admin-mode) select:not(.admin-input),
+body.light-theme:not(.admin-mode) textarea:not(.admin-input) {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important;
+}
+
+body.light-theme:not(.admin-mode) input:not(.admin-input):focus,
+body.light-theme:not(.admin-mode) select:not(.admin-input):focus,
+body.light-theme:not(.admin-mode) textarea:not(.admin-input):focus {
+  background-color: #ffffff !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+
+body.light-theme:not(.admin-mode) input:not(.admin-input)::placeholder,
+body.light-theme:not(.admin-mode) textarea:not(.admin-input)::placeholder {
+  color: #64748b !important;
+}
+
+body.light-theme:not(.admin-mode) select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+body.light-theme:not(.admin-mode) .bg-\[\#0b1020\],
+body.light-theme:not(.admin-mode) .bg-\[\#0b1020\]\/90,
+body.light-theme:not(.admin-mode) .bg-\[\#0b1020\]\/80 {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+}
+
+body.light-theme:not(.admin-mode) .bg-black\/50,
+body.light-theme:not(.admin-mode) .bg-black\/40,
+body.light-theme:not(.admin-mode) .bg-black\/30,
+body.light-theme:not(.admin-mode) .bg-black\/20 {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+}
+
+body.light-theme:not(.admin-mode) .bg-blue-950\/30,
+body.light-theme:not(.admin-mode) .bg-blue-950\/40 {
+  background-color: #eff6ff !important;
+  border-color: #bfdbfe !important;
+  color: #1e40af !important;
+}
+
+body.light-theme:not(.admin-mode) .bg-blue-950\/30 span,
+body.light-theme:not(.admin-mode) .bg-blue-950\/30 strong {
+  color: #1e3a8a !important;
+}
+
+/* Modern Sky Blue / White Footer Styling */
+footer {
+  background: linear-gradient(180deg, #e0f2fe 0%, #f0f9ff 35%, #ffffff 100%) !important;
+  color: #0f172a !important;
+  border-top: 2px solid #7dd3fc !important;
+}
+
+body.light-theme footer {
+  background: linear-gradient(180deg, #e0f2fe 0%, #f0f9ff 35%, #ffffff 100%) !important;
+  color: #0f172a !important;
+}
+
+footer .developer-card {
+  background-color: #ffffff !important;
+  border: 1.5px solid #7dd3fc !important;
+  box-shadow: 0 10px 25px -5px rgba(14, 165, 233, 0.12), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+footer .developer-card h5 {
+  color: #0f172a !important;
+}
+
+footer .developer-card .dev-text-muted {
+  color: #475569 !important;
+}
+
+footer .developer-card .dev-reg {
+  color: #0369a1 !important;
+  background-color: #e0f2fe !important;
+  border: 1px solid #7dd3fc !important;
+}
+
+/* Proctoring Violation Modal Theme Immunity */
+body.light-theme:not(.admin-mode) .proctor-modal-container .text-white,
+body.light-theme:not(.admin-mode) .proctor-modal-container h3 {
+  color: #ffffff !important;
+}
+
+body.light-theme:not(.admin-mode) .proctor-modal-container .bg-\[\#14080c\] {
+  background-color: #14080c !important;
+}
+
+body.light-theme:not(.admin-mode) .proctor-modal-container .proctor-info-box {
+  background-color: #1a0508 !important;
+  border-color: rgba(239, 68, 68, 0.4) !important;
+  color: #f8fafc !important;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080d1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
