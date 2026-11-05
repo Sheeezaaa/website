@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Battle of Brains 2026 — Official System Documentation
 ## National Individual Computing Championship
 **Host:** Department of Computer Science & Information Technology, COMSATS University Islamabad  
@@ -179,3 +180,6 @@ The test suite validates:
   Registration: **SP24-BSE-029**  
   Designation: **Developer**  
   LinkedIn: Configurable via `NEXT_PUBLIC_DEVELOPER_YAMEENA_LINKEDIN_URL`
+=======
+# website
+>>>>>>> 62c115f4e3a7eae033b8a6a7c8caf335a33bb9fb
